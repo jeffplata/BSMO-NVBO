@@ -1,0 +1,56 @@
+# Byte-compiled / cached Python files
+__pycache__/
+*.py[cod]
+*$PYTHONLEGACYWINDOWSSTDIO$*
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Flask cache and session files
+instance/
+*.log
+*.pid
+
+# Environment variables & configuration
+.env
+*.ini
+config.json
+
+# SQLite database files
+*.sqlite3
+*.db
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.pytest_cache/
+
+# Pip dependency files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# Migrations (optional)
+migrations/
+
+# Celery & Task Queues
+celerybeat-schedule
+celerybeat.pid
+
+# Metabase settings (if applicable)
+metabase.db/

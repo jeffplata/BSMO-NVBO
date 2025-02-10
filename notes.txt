@@ -1,0 +1,22 @@
+python -c "import secrets; print(secrets.token_hex(16))"
+
+.env example
+FLASK_RUN_HOST = 127.0.0.1
+FLASK_RUN_PORT = 5000
+FLASK_DEBUG = True
+SECRET_KEY = "c530baa69d04e16bec31558b50f022a1"
+SECURITY_PASSWORD_SALT = "cfc28cee1e8124f60221286c556cdcf3"
+DEFAULT_PASSWORD = "Password123@"
+
+
+git config --global user.name "JeffPlata"
+git config --global user.email "jeffplata@yahoo.com"
+
+
+echo "# BSMO-NVBO" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jeffplata/BSMO-NVBO.git
+git push -u origin main
