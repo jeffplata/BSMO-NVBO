@@ -15,6 +15,7 @@ class Config:
     SECURITY_REGISTERABLE = True  # Allows user registration
     SECURITY_SEND_REGISTER_EMAIL = False  # Disable email confirmation
     SECURITY_PASSWORD_HASH = "pbkdf2_sha512"
+    SECURITY_PASSWORD_SINGLE_HASH = False
 
     DEFAULT_PASSWORD = os.getenv("DEFAULT_PASSWORD") or "secret"
     
