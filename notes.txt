@@ -1,3 +1,7 @@
+# virtual environment would not start because of PS security policy
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+
+
 python -c "import secrets; print(secrets.token_hex(16))"
 
 .env example
@@ -20,3 +24,17 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/jeffplata/BSMO-NVBO.git
 git push -u origin main
+
+
+*If Powershell refuses to activate venv
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# overwrite last pushed commit
+* While in development, avoid piling up daily dev commits
+*   maintain limited pushed commits
+
+git reset --soft HEAD~1
+git add .
+git commit -m "your new commit message"
+git push --force

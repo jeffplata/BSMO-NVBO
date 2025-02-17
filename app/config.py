@@ -1,5 +1,5 @@
 import os
-from unittest.mock import DEFAULT
+# from unittest.mock import DEFAULT
 
 class Config:
     # FLASK_RUN_HOST = os.environ.get("FLASK_RUN_HOST") or "0.0.0.0"
@@ -19,3 +19,5 @@ class Config:
 
     DEFAULT_PASSWORD = os.getenv("DEFAULT_PASSWORD") or "secret"
     
+    # Flask-RESTX settings
+    ERROR_INCLUDE_MESSAGE = False
